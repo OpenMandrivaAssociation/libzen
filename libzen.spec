@@ -6,7 +6,7 @@
 
 Name:		libzen
 Version:	0.4.19
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
 License:	BSD
@@ -70,7 +70,7 @@ popd
 install -dm 755 %{buildroot}%{_includedir}/ZenLib
 install -m 644 Source/ZenLib/*.h %{buildroot}%{_includedir}/ZenLib
 
-for i in Base64 HTTP_Client; do
+for i in Base64 HTTP_Client TinyXml Format/Html Format/Http; do
 	install -dm 755 %{buildroot}%{_includedir}/ZenLib/$i
 	install -m 644 Source/ZenLib/$i/*.h %{buildroot}%{_includedir}/ZenLib/$i
 done
