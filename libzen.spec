@@ -5,14 +5,14 @@
 %define devname %mklibname %{oname} -d
 
 Name:		libzen
-Version:	0.4.19
-Release:	%mkrel 2
+Version:	0.4.20
+Release:	%mkrel 1
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
 License:	BSD
 URL:		http://zenlib.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/zenlib/%{name}_%{version}.tar.bz2
-Patch0:		libzen_0.4.19-fix-build.patch
+Patch0:		libzen_0.4.20-fix-build.patch
 BuildRequires:	dos2unix
 BuildRequires:	doxygen
 
@@ -46,8 +46,7 @@ chmod 644 *.txt Source/Doc/*.html
 
 %build
 pushd Project/GNU/Library
-	chmod +x autogen
-	./autogen
+	autoreconf -vfi
 	%configure2_5x \
 		--enable-shared \
 		--disable-static
