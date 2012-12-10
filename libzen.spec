@@ -5,7 +5,7 @@
 %define devname %mklibname %{oname} -d
 
 Name:		libzen
-Version:	0.4.27
+Version:	0.4.25
 Release:	1
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
@@ -88,3 +88,26 @@ rm %{buildroot}%{_libdir}/libzen.la
 %{_includedir}/ZenLib
 %{_libdir}/libzen.so
 %{_libdir}/pkgconfig/*.pc
+
+
+%changelog
+* Fri Mar 16 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.4.25-1
++ Revision: 785237
+- version update 0.4.25
+
+* Sun Feb 05 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.4.24-1
++ Revision: 771300
+- version update 0.4.24
+
+* Sat Jun 18 2011 Jani Välimaa <wally@mandriva.org> 0.4.20-1
++ Revision: 685911
+- new version 0.4.20
+
+* Sun May 01 2011 Jani Välimaa <wally@mandriva.org> 0.4.19-2
++ Revision: 661379
+- add more header files to -devel package
+
+* Sun May 01 2011 Jani Välimaa <wally@mandriva.org> 0.4.19-1
++ Revision: 661356
+- import libzen
+
