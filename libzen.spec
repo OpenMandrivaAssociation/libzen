@@ -6,7 +6,7 @@
 
 Name:		libzen
 Version:	0.4.29
-Release:	1
+Release:	2
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
 License:	BSD
