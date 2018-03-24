@@ -86,6 +86,7 @@ rm %{buildroot}%{_libdir}/libzen.la
 %doc Source/Doc/Documentation.html
 %doc Doc/*
 %{_includedir}/ZenLib
-%{_bindir}/libzen-config
+# Disable, file is removed from upstream
+#{_bindir}/libzen-config
 %{_libdir}/libzen.so
 %{_libdir}/pkgconfig/*.pc
