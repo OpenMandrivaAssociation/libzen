@@ -5,7 +5,7 @@
 %define devname %mklibname %{oname} -d
 
 Name:		libzen
-Version:	0.4.29
+Version:	0.4.37
 Release:	2
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
