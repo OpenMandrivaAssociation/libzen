@@ -5,7 +5,7 @@
 %define devname %mklibname %{oname} -d
 
 Name:		libzen
-Version:	0.4.29
+Version:	0.4.37
 Release:	2
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
@@ -86,6 +86,7 @@ rm %{buildroot}%{_libdir}/libzen.la
 %doc Source/Doc/Documentation.html
 %doc Doc/*
 %{_includedir}/ZenLib
-%{_bindir}/libzen-config
+# Disable, file is removed from upstream
+#{_bindir}/libzen-config
 %{_libdir}/libzen.so
 %{_libdir}/pkgconfig/*.pc
