@@ -5,13 +5,13 @@
 %define devname %mklibname %{oname} -d
 
 Name:		libzen
-Version:	0.4.29
-Release:	2
+Version:	0.4.37
+Release:	1
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
 License:	BSD
 URL:		http://zenlib.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/zenlib/%{name}_%{version}.tar.bz2
+Source0:	http://mediaarea.net/download/source/%{name}/%{version}/%{name}_%{version}.tar.bz2
 Patch0:		libzen_0.4.20-fix-build.patch
 BuildRequires:	dos2unix
 BuildRequires:	doxygen
@@ -86,6 +86,7 @@ rm %{buildroot}%{_libdir}/libzen.la
 %doc Source/Doc/Documentation.html
 %doc Doc/*
 %{_includedir}/ZenLib
-%{_bindir}/libzen-config
+# Disable, file is removed from upstream
+#{_bindir}/libzen-config
 %{_libdir}/libzen.so
 %{_libdir}/pkgconfig/*.pc
