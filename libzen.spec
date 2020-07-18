@@ -6,7 +6,7 @@
 
 Name:		libzen
 Version:	0.4.38
-Release:	1
+Release:	2
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
 License:	BSD
@@ -47,10 +47,10 @@ chmod 644 *.txt Source/Doc/*.html
 %build
 pushd Project/GNU/Library
 	autoreconf -vfi
-	%configure2_5x \
+	%configure \
 		--enable-shared \
 		--disable-static
-	%make
+	%make_build
 popd
 
 # generate docs
@@ -61,7 +61,7 @@ popd
 
 %install
 pushd Project/GNU/Library
-	%makeinstall_std
+	%make_install
 popd
 
 # Zenlib headers and ZenLib-config
