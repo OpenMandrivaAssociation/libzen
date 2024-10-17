@@ -10,7 +10,7 @@ Release:	1
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
 License:	BSD
-URL:		http://zenlib.sourceforge.net/
+URL:		https://zenlib.sourceforge.net/
 Source0:	http://mediaarea.net/download/source/%{name}/%{version}/%{name}_%{version}.tar.bz2
 Patch0:		libzen_0.4.20-fix-build.patch
 BuildRequires:	dos2unix
