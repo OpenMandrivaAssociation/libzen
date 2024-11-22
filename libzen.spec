@@ -6,12 +6,12 @@
 
 Name:		libzen
 Version:	0.4.41
-Release:	1
+Release:	2
 Summary:	Shared library for mediainfo
 Group:		System/Libraries
 License:	BSD
 URL:		https://zenlib.sourceforge.net/
-Source0:	http://mediaarea.net/download/source/%{name}/%{version}/%{name}_%{version}.tar.bz2
+Source0:	https://mediaarea.net/download/source/%{name}/%{version}/%{name}_%{version}.tar.bz2
 Patch0:		libzen_0.4.20-fix-build.patch
 BuildRequires:	dos2unix
 BuildRequires:	doxygen
