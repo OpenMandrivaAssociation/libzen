@@ -38,7 +38,7 @@ Include files and mandatory libraries for development.
 
 %prep
 %setup -q -n ZenLib
-%patch0 -p0
+%patch0 -p 0
 
 #fix EOLs and rights
 dos2unix *.txt Source/Doc/*.html
