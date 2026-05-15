@@ -1,0 +1,12 @@
+diff -rupN ZenLib.old/Source/ZenLib/Thread.h ZenLib/Source/ZenLib/Thread.h
+--- ZenLib.old/Source/ZenLib/Thread.h	2023-04-04 13:40:29.000000000 +0200
++++ ZenLib/Source/ZenLib/Thread.h	2026-05-15 19:09:33.583169372 +0200
+@@ -21,6 +21,8 @@
+ #endif
+ //---------------------------------------------------------------------------
+ 
++#include <stdlib.h>
++
+ namespace ZenLib
+ {
+ 
