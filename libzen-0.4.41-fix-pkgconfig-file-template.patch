@@ -1,0 +1,22 @@
+diff -rupN ZenLib.old/Project/CMake/libzen.pc.in ZenLib/Project/CMake/libzen.pc.in
+--- ZenLib.old/Project/CMake/libzen.pc.in	2023-04-04 13:40:29.000000000 +0200
++++ ZenLib/Project/CMake/libzen.pc.in	2026-05-15 19:12:00.340167673 +0200
+@@ -3,7 +3,6 @@ exec_prefix=${prefix}
+ libdir=@LIB_INSTALL_DIR@
+ includedir=@INCLUDE_INSTALL_DIR@
+ Unicode=@ZenLib_Unicode@
+-Libs_Static=@LIB_INSTALL_DIR@/libzen.a -lpthread
+ 
+ Name: libzen
+ Version: @ZenLib_VERSION@
+diff -rupN ZenLib.old/Project/GNU/Library/libzen.pc.in ZenLib/Project/GNU/Library/libzen.pc.in
+--- ZenLib.old/Project/GNU/Library/libzen.pc.in	2023-04-04 13:40:29.000000000 +0200
++++ ZenLib/Project/GNU/Library/libzen.pc.in	2026-05-15 19:12:20.694633671 +0200
+@@ -4,7 +4,6 @@ libdir=@libdir@
+ includedir=@includedir@
+ Unicode=@ZenLib_Unicode@
+ WstringMissing=@ZenLib_wstring_missing@
+-Libs_Static=@libdir@/libzen.a -lpthread
+ 
+ Name: libzen
+ Version: @PACKAGE_VERSION@
