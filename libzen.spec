@@ -83,22 +83,3 @@ popd
 pushd Project/CMake
 	%make_install -C build
 popd
-
-# Fix pkgconfig file
-#sed -i -e 's|libdir\=lib64 | libdir\=\/usr\/lib64|g' %%{buildroot}%%{_libdir}/pkgconfig/libzen.pc
-
-%if 0
-# Zenlib headers and ZenLib-config
-install -dm 755 %{buildroot}%{_includedir}/ZenLib
-install -m 644 Source/ZenLib/*.h %{buildroot}%{_includedir}/ZenLib
-
-# Fix and install pkgconfig file
-sed -i -e 's|Version: |Version: %{version}|g' Project/GNU/Library/libzen.pc
-sed -i -e '/Libs_Static.*/d' Project/GNU/Library/libzen.pc
-
-install -dm 755 %{buildroot}%{_libdir}/pkgconfig
-install -m 644 Project/GNU/Library/libzen.pc %{buildroot}%{_libdir}/pkgconfig
-
-# We don't want these
-rm %{buildroot}%{_libdir}/libzen.la
-%endif
